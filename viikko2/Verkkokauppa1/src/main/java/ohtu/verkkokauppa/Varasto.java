@@ -2,6 +2,7 @@ package ohtu.verkkokauppa;
 
 import java.util.*;
 
+<<<<<<< HEAD
 public class Varasto {
 
     private static Varasto instanssi;
@@ -19,10 +20,23 @@ public class Varasto {
 
     private Varasto() {
         kirjanpito = Kirjanpito.getInstance();
+=======
+public class Varasto implements VarastoRajapinta {
+
+    private KirjanpitoRajapinta kirjanpito;
+    private HashMap<Tuote, Integer> saldot;
+
+    public Varasto(KirjanpitoRajapinta k) {
+        kirjanpito = k;
+>>>>>>> c74189ff4c11ba2fc6fd8082398b0d4c833dd73d
         saldot = new HashMap<Tuote, Integer>();
         alustaTuotteet();
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+>>>>>>> c74189ff4c11ba2fc6fd8082398b0d4c833dd73d
     public Tuote haeTuote(int id){
         for (Tuote t : saldot.keySet()) {
             if ( t.getId()==id) return t;
@@ -31,15 +45,27 @@ public class Varasto {
         return null;
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+>>>>>>> c74189ff4c11ba2fc6fd8082398b0d4c833dd73d
     public int saldo(int id){
         return saldot.get(haeTuote(id));
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+>>>>>>> c74189ff4c11ba2fc6fd8082398b0d4c833dd73d
     public void otaVarastosta(Tuote t){
         saldot.put(t,  saldo(t.getId())-1 );
         kirjanpito.lisaaTapahtuma("otettiin varastosta "+t);
     }
 
+<<<<<<< HEAD
+=======
+    @Override
+>>>>>>> c74189ff4c11ba2fc6fd8082398b0d4c833dd73d
     public void palautaVarastoon(Tuote t){
         saldot.put(t,  saldo(t.getId())+1 );
         kirjanpito.lisaaTapahtuma("palautettiin varastoon "+t);
