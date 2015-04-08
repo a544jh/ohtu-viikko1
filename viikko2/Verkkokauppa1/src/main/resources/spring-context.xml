@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-<<<<<<< HEAD
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans 
        http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
@@ -12,28 +11,3 @@
     <context:component-scan base-package="ohtu.verkkokauppa" />  
     
 </beans>
-=======
-       xsi:schemaLocation="http://www.springframework.org/schema/beans
-       http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
-
-    
-
-    
-    <bean id="vg" class="ohtu.verkkokauppa.Viitegeneraattori">
-    </bean>
-    <bean id="kp" class="ohtu.verkkokauppa.Kirjanpito">
-    </bean>
-    <bean id="varasto" class="ohtu.verkkokauppa.Varasto">
-        <constructor-arg ref="kp" />
-    </bean>
-    <bean id="pankki" class="ohtu.verkkokauppa.Pankki">
-        <constructor-arg ref="kp" />
-    </bean>
-    <bean id="kauppa" class="ohtu.verkkokauppa.Kauppa">
-        <constructor-arg ref="varasto" />
-        <constructor-arg ref="pankki" />
-        <constructor-arg ref="vg" />
-    </bean>
-
-</beans>
->>>>>>> c74189ff4c11ba2fc6fd8082398b0d4c833dd73d
