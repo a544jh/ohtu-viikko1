@@ -1,0 +1,5 @@
+http://martinfowler.com/articles/designDead.html
+
+Artikkeli käsittelee ohjelmistosuunnittelun roolia Extreme Programming (XP) metologiassa. XP:ssä ei suunnitella ohjelmistoa etukäteen. Sen sijaan harjoitetaan evolutionaarista kehitystä (Evolutionary design) pitämällä koodia niin yksinkertaisena kuin mahdollista. Tämä tarkoittaa muun muassa että vältetään turhien asioiden huolehtimasta etukäteen, ns. YAGNI(You aren't gonna need it)-periaatteella. Kun nähdään että koodi on tulossa monimutkaiseksi, otetaan refaktorointi käyttöön. Refaktoroinnin tarkoitus on pitää koodi yksinkertaisena.
+
+XP:ssä UML-kaavioita käytetään pääosin ideoiden kommunikointia varten. Niitä tulee pitää yksinkertaisina. XP:ssä painotetaan myös kokemuksen jakamista kehitystiimin sisällä. Kokeneemmat kehittäjät auttavat muita päätösten tekemisessä. Tätä varten on XP:ssä ”Coach”-rooli. Kokeneemmat kehittäjät osaavat myös paremmin toteuttamaan laajempia muutoksia koodiin (esim. lokalisaatio).
