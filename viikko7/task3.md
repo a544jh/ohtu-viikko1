@@ -1,0 +1,5 @@
+http://www.infoq.com/articles/internal-dsls-java
+
+Domain-specific language (DSL) on kieli, joka on tarkoitettu jollekin tietylle ongelma-alueelle. DSL-kielet ovat yleistyneet dynaamisten kielten, kuten Rubyn suosion myötä. Näiden kielten löysän struktuurin vuoksi, niiden avulla on helppo muodostaa luonnollista kieltä muistuttavia rakenteita. Artikkelissa tarkastellaan muutamia tapoja DSL-rakenteiden muodostamiseen Java-kielessä. Javan rakenteen vuoksi voidaan käyttää kehitysympäristöjen ominaisuuksia hyväksi.
+
+Metodiketjutukesella voidaan saada aikaiseksi siistimpää koodia. Ketjutusta voidaan käyttää kun halutaan kutsua samalle oliolle toisiinsa liittyviä metodeja, esim. rakentaja-oliossa. Tämä onnistuu kun luokkametodien paluuarvoksi asetetaan this. Ketjutuksen yhteydessä voidaan käyttää staattisia tehdasmetodeja simuloidakseen nimettyjä parametreja, jotka eivät ole Javan tukemia.
